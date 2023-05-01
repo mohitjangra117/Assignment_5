@@ -1,0 +1,50 @@
+
+header{
+    height: 100px;
+    background-color: navy;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+ul li a{
+    padding:0 20px;
+    text-decoration: none;
+    color: aqua;
+}
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: palegoldenrod;
+    transition: all .6s;
+
+}
+li a:hover::after{
+    width:100%;
+}
+main{
+    display: flex;
+    border: 2px solid blue;
+    height:calc(100vh-100px);
+    align-items: center;
+    justify-content: center;
+
+}
+.hero-img{
+    max-width: 570px;
+    height: auto;
+}
+.content-left{
+    width: 30%;
+
+}
+main h1{
+    font-size: 50px;
+    color: black;
+
+}
